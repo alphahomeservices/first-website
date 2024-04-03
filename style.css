@@ -1,0 +1,616 @@
+
+:root{
+    --blue: #516c9f;
+}
+
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+html, body{
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Noto Sans HK', sans-serif;
+    color: rgb(60,60,65);
+}
+
+img {
+    max-width:100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.2em;
+}
+
+a:hover{
+    color: var(--blue);
+}
+
+/* ------------- Utility Classes --------------  */
+
+.left     {  text-align: left;     }
+.right    {  text-align: right;    }
+.center {  text-align: center;   }
+
+
+.padded   {  padding: 5%;    }
+.padded-05 {  padding: 0.5rem;  }
+.padded-3 {  padding: 3%;  }
+.padded-1 {  padding: 1rem;  }
+.padded-2 {  padding: 2rem;  }
+.p-t-10{padding-top: 10%;}
+.p-2 {  padding: 2rem;  }
+.m-l-505{margin-left: 5.5rem;}
+.m-l-3{margin-left: 3rem;}
+.m-r-4{margin-right: 3.8rem;}
+.m-r-35{margin-right: 3.5rem;}
+.m-r-6{margin-right: 6rem;}
+.p-t-1{padding-top: 1rem;}
+.p-l-0{padding-left: 0;}
+.p-b-0{padding-bottom: 0;}
+.p-t-3{margin-top: 3%;}
+.p-b-5{padding-bottom: 5%;}
+.padded-05{
+    padding: 0.5rem;
+  }
+
+.capped-width { max-width: 1100px; margin: auto;}
+
+.tall-15  {  min-height: 15vh;   }
+.tall-50  {  min-height: 50vh;   }
+.tall-100 {  min-height: 100vh;  }
+.max-logo{max-width: 15vw;}
+
+.dark-bg      {  background-color: rgb(90, 90, 95);     }
+.light-bg     {  background-color: rgb(240, 240, 245);  }
+.featured-bg  {  background-color: #ffeaa7;             }
+
+.light-text   { color: white; }
+.caps {text-transform: uppercase;}
+
+
+.flex-flip:nth-child(2n){  flex-direction: row-reverse; }
+
+/* General typography */
+
+h2, h3, h4, h5, h6 {
+    line-height: 1;
+    margin-bottom: 0.8rem;
+}
+
+h2  { font-size: 2.2rem;  }
+h3  { font-size: 1.8rem;  }
+h4  { font-size: 1.4rem;  }
+p   { font-size: 1.2rem;  }
+
+p, ul {
+    margin-bottom: 0.8rem;
+}
+
+/* this makes sure that the last element in any container doesn't have margin-bottom */
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child,
+p:last-child {
+margin-bottom:0;
+}
+
+hr { /* this is a line element */
+    border: none;
+    border-bottom: 2px solid var(--blue);
+    width: 4rem;
+    margin-bottom: 1rem;
+}
+
+
+/* Unique Typography Styles */
+
+.emphasis {
+    font-size: 1.2rem;
+}
+
+.blocktext{
+    text-align: justify;
+}
+
+.white{
+    color: white;
+}
+
+/* Button & Link Styles */
+
+.fontawesome{
+    font-size: 2.5rem;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* We have created lots of different button styles, you probably don't need to have quite this many styles depending on your site */
+
+.button,
+.button-solid,
+.button-inverted {
+    text-decoration: none;
+    color: rgb(120,120,130);
+    border: 2px solid;
+    padding: 0.6rem 2rem;
+    margin-top: 1rem;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.button:hover {
+        color: white;
+        background-color: var(--blue);
+        border: 2px solid var(--blue);
+}
+
+.button.inverted {   /* this is for a button on a dark background */
+    border: 2px solid white;
+    color: white;
+}
+
+.button.inverted:hover {
+    color: #e67e22;
+    border-color: #e67e22;
+}
+
+.button-solid {
+    background-color: #e67e22;
+    border-color: #e67e22;
+    color: white;
+}
+
+.button-solid:hover {
+    background-color: rgb(60, 60, 60);
+    border-color: rgb(60, 60, 60);
+}
+
+
+/* Header and footer styles */
+header{
+    padding-bottom: 1%;
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 3.8%;
+}
+
+.emphasis-button {
+    border: 2px solid var(--blue);
+    margin-left: 0.5rem;
+    padding: 0.8rem;
+    transition: 0.3s;
+    font-size: 1.2rem;
+}
+
+.emphasis-button:hover{
+    color: white;
+    background-color: var(--blue);
+    border: 2px solid var(--blue);
+}
+            
+.big-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.big-p{
+    font-size: 3rem;
+    border-right: 2px solid var(--blue);
+    padding-right: 3.5rem;
+    letter-spacing: 1.05;
+    font-weight: 300;
+}
+
+footer{
+    padding: 2% 5% 0 5%;
+}
+
+header nav a{
+    padding-right: 1.2rem;
+}
+
+footer a{
+    font-size: 1.2rem;
+}
+
+#blueline{
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    min-width: 100vw;
+}
+    
+.copyright{
+    font-size: 0.8rem;
+    margin-bottom: 0.4rem;
+}
+
+.copyright a{
+    font-size: 0.8rem;
+}
+
+.hamburger-button {
+    cursor: pointer;
+    padding: 0 0.5rem;
+    display: inline-block;
+    font-weight: 200;
+    font-size: 3.5rem;
+    line-height: 0.8;
+    margin-top: -0.7rem;
+    position: absolute;
+    right: 1rem;
+    top: 2rem;
+    z-index: 3;
+}
+
+.hamburger-button.active {
+    color: var(--blue);
+}
+
+.mobile-menu {
+    display: none; 
+    background-color: white; 
+    color: #434242;
+    padding: 5%;
+    position: fixed; 
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 2;
+}
+
+.mobile-menu a {
+    text-decoration: none; 
+    color: inherit; 
+    padding: 5vh 5%;
+    display: block;
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+
+.mobile-menu a:hover{
+    color: var(--blue);
+}
+
+.tablet-show {
+    display: none; 
+}
+                        
+                      
+#video{
+    padding-top: 0;
+    padding-bottom: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+
+
+.bg-black{
+    background: black;
+}
+
+.underline{
+    border-bottom: 2px solid var(--blue);
+}
+
+/* contact styles */
+
+.bg-gray{
+    background-color: #434242;
+}
+
+.bg-teal{
+    background-color: var(--blue);
+}
+
+            
+              
+form input, form textarea{
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-bottom: 2px solid white;
+    /*this will override the blue outline upon hovering or clicking*/
+    outline: none;
+    font-family: inherit;
+    background-color: var(--blue);
+    font-size: 1.3rem;
+    color: #434242;
+}
+  /* sets the outlien to teal when its being focuse --> clicked on/written in*/
+form input:focus, form textarea:focus{
+    border-bottom-color: #434242;
+}
+
+textarea{
+    min-height: 5rem;
+}
+
+form label{
+    margin-top: 1rem;
+    display: block;
+    color: var(--writing);
+    font-weight: bold;
+}
+
+form button{
+    border: 2px solid white;
+    transition: 0.3s;
+    color: white;
+    padding-top: 2.8%;
+    padding: 1.1%;
+    font-weight: 400;
+    background-color: inherit;
+    font-size: 1.2rem;
+}
+
+.p-t-28{
+    padding-top: 2.8%;
+}
+
+form button:hover{
+    border: 2px solid #434242;
+    color: #434242;
+    cursor: pointer;
+}
+
+.inp{
+    border: none;
+    border-bottom: 2px solid white;
+}
+
+.floating-input {
+    position: relative;
+    padding-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+::placeholder{
+    color: white;
+    opacity: 0.4;
+}
+
+.justify{
+    text-align: justify;
+}
+
+#contact a{
+    font-size: 1.2rem;
+}
+
+/* .white-underline{
+    border-bottom: 2px solid white;
+} */
+
+
+            
+              
+.bg-image {
+    background-size: cover;
+    background-position: center;
+    min-height: 10rem;
+  }
+  
+  .bg-mountain {
+    background-image:url('/images/placeholder-photo-1.jpg');
+  }
+  
+  .bg-adventure {
+    background-image:url('/images/placeholder-photo-2.jpg');
+  }
+  
+              
+            
+
+/* past performance section styles */
+            
+
+              
+.hover-container {
+    background-size: cover;
+    background-position: center;
+}
+
+.hover-overlay {
+position: relative;
+padding-bottom: 100%;
+color: rgba(255, 255, 255, 0);
+position: relative;
+/* you only need to use relative + absolute if you want to determine the exact aspect ratio of the container */
+transition: all 0.3s;
+}
+
+.hover-overlay:hover {
+background-color: rgba(60, 60, 60, 0.7);
+color: white;
+}
+
+.hover-inner {
+position: absolute;
+width: 100%;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+}
+
+.hover-inner p {
+margin-bottom: 0;
+}
+
+.mob-show{
+    display: none;
+}
+
+
+/* card styles*/
+
+.pricing{
+    max-width: 1200px;
+    margin:auto;
+  }
+
+.pricing-ul{
+    margin-left: 0.7rem;
+}
+  
+  .pricing [class*=col-]{
+    background-color: #434242;
+    border: 0.5rem solid white;
+    color: white;
+  }
+  .card{
+    padding: 1rem;
+    background-color: #434242;
+    border: 1px solid white;
+    color: white;
+  }
+  
+  .card.bg-red,
+  .pricing .bg-red{
+    background-color:  var(--blue);
+    color: white;
+  }
+  
+  .card h3{
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 1.2rem;
+    letter-spacing: 0.03rem;
+  }
+  
+  .price{
+    font-size: 3rem;
+    font-weight: 400;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .card p,
+  .card li{
+    text-align: left;
+    font-size: 0.9rem;
+  }
+  
+  .bg-image span, .bg-image-2 span{
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  
+  .post-info{
+    padding: 1rem;
+    
+  }
+  
+  .date{
+    font-size: 0.8rem;
+    color: gray;
+  }
+  
+  .card a{
+    display: inline-block;
+    margin-top: 1rem;
+  }
+  
+.asterix-pricing{
+    font-size: 1rem;
+    font-style: italic;
+    margin-top: 0.3rem;
+}
+
+.text-link{
+    font-size: 1.2rem;
+    border-bottom: 1px solid var(--blue);
+}
+
+/* Lessons styles */
+
+#lessons{
+    background-color: var(--blue);
+    color: white;
+}
+
+.download-link{
+    display: inline-block;
+    margin-top: 5%;
+    transition: 0.3s;
+}
+
+.download-link:hover{
+    color: black;
+}
+
+@media(min-width: 1500px){
+    .pricing{
+        max-width: 1350px;
+    }
+}
+
+@media(max-width: 1080px){
+    .big-p{
+        font-size: 1.5rem;
+        border-right: 2px solid var(--blue);
+    }
+    
+    .tablet-hide{
+        display: none;
+    }
+
+    .tablet-show { display: block; }
+
+    .mob-show{
+        display: block;
+    }
+}
+            
+
+@media(max-width:768px) {
+    .email-signup input {
+    width: 100%;
+    max-width: 100%;
+    }
+
+    .big-p{
+        border-right: none;
+        padding: 0;
+        text-align: center;
+    }
+
+    .mob-hide{
+        display: none;
+    }
+    .iframe-container{
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; 
+        height: 0;
+      }
+      .iframe-container iframe{
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .max-logo{
+        max-width: 75vw;
+      }
+}
+  
+              
+            
