@@ -1,6 +1,7 @@
 
 :root{
-    --blue: #516c9f;
+    --blue: #546A7B;
+    --red: #BD453F;
 }
 
 * {
@@ -15,7 +16,7 @@ html, body{
 
 body {
     font-family: 'Noto Sans HK', sans-serif;
-    color: rgb(60,60,65);
+    color: black;
 }
 
 img {
@@ -29,7 +30,7 @@ a {
 }
 
 a:hover{
-    color: var(--blue);
+    color: var(--red);
 }
 
 /* ------------- Utility Classes --------------  */
@@ -51,6 +52,7 @@ a:hover{
 .m-r-4{margin-right: 3.8rem;}
 .m-r-35{margin-right: 3.5rem;}
 .m-r-6{margin-right: 6rem;}
+.m-t-3{margin-top: 3rem;}
 .p-t-1{padding-top: 1rem;}
 .p-l-0{padding-left: 0;}
 .p-b-0{padding-bottom: 0;}
@@ -59,6 +61,13 @@ a:hover{
 .padded-05{
     padding: 0.5rem;
   }
+
+.padded-top{
+    padding-top: 1%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+}
 
 .capped-width { max-width: 1100px; margin: auto;}
 
@@ -139,7 +148,7 @@ hr { /* this is a line element */
 .button-solid,
 .button-inverted {
     text-decoration: none;
-    color: rgb(120,120,130);
+    color: var(--red);
     border: 2px solid;
     padding: 0.6rem 2rem;
     margin-top: 1rem;
@@ -151,8 +160,8 @@ hr { /* this is a line element */
 
 .button:hover {
         color: white;
-        background-color: var(--blue);
-        border: 2px solid var(--blue);
+        background-color: var(--red);
+        border: 2px solid var(--red);
 }
 
 .button.inverted {   /* this is for a button on a dark background */
@@ -172,8 +181,8 @@ hr { /* this is a line element */
 }
 
 .button-solid:hover {
-    background-color: rgb(60, 60, 60);
-    border-color: rgb(60, 60, 60);
+    background-color: var(--red);
+    border-color: var(--red);
 }
 
 
@@ -186,7 +195,7 @@ header{
 }
 
 .emphasis-button {
-    border: 2px solid var(--blue);
+    border: 2px solid var(--red);
     margin-left: 0.5rem;
     padding: 0.8rem;
     transition: 0.3s;
@@ -195,8 +204,8 @@ header{
 
 .emphasis-button:hover{
     color: white;
-    background-color: var(--blue);
-    border: 2px solid var(--blue);
+    background-color: var(--red);
+    border: 2px solid var(--red);
 }
             
 .big-icon {
@@ -283,7 +292,7 @@ footer a{
 }
 
 .mobile-menu a:hover{
-    color: var(--blue);
+    color: var(--red);
 }
 
 .tablet-show {
@@ -298,6 +307,9 @@ footer a{
     padding-right: 5%;
 }
 
+.bg-blue{
+    background-color: var(--blue);
+}
 
 
 .bg-black{
@@ -520,20 +532,20 @@ margin-bottom: 0;
 }
   
   .pricing [class*=col-]{
-    background-color: #434242;
+    background-color: var(--blue);
     border: 0.5rem solid white;
     color: white;
   }
   .card{
     padding: 1rem;
-    background-color: #434242;
+    background-color: var(--blue);
     border: 1px solid white;
     color: white;
   }
   
   .card.bg-red,
   .pricing .bg-red{
-    background-color:  var(--blue);
+    background-color:  var(--red);
     color: white;
   }
   
@@ -585,7 +597,7 @@ margin-bottom: 0;
 
 .text-link{
     font-size: 1.2rem;
-    border-bottom: 1px solid var(--blue);
+    border-bottom: 1px solid var(--red);
 }
 
 /* Lessons styles */

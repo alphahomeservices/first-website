@@ -17,3 +17,7 @@ $('.testimonial-slider-container').slick({
    
     
 });
+
+AOS.init({
+    duration: 2500 // values from 0 to 3000, with step 50ms
+});
