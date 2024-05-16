@@ -1,7 +1,7 @@
 
 :root{
-    --blue: #546A7B;
-    --red: #BD453F;
+    --blue: #1B244D;
+    --red: #FBB03C;
 }
 
 * {
@@ -239,6 +239,7 @@ footer a{
     margin-left: 0;
     margin-right: 0;
     min-width: 100vw;
+    color: var(--blue);
 }
     
 .copyright{
