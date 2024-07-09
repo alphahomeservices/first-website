@@ -185,6 +185,92 @@ hr { /* this is a line element */
     border-color: var(--red);
 }
 
+/* SLider images */
+
+.sliderContainer {
+    position: relative;
+    width: 90%; /* change this to suit your design */
+    padding-bottom: 50%;
+    border: 2px solid white;
+    margin:auto;
+    position: relative;
+  
+  }
+  .ba-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 90vw; /* change this to suit your design */
+    background-position: left;
+    pointer-events: none;
+  }
+  .ba-background-img {
+    background-image: url('https://picsum.photos/id/1003/600/400');
+  }
+  .ba-foreground-img {
+    background-image: url('https://picsum.photos/id/1003/600/400');
+    width: 50%;
+    /* just for testing if you use the same image */
+    filter: invert(1);
+  }
+  
+  .ba-slider{
+    position: absolute;
+    left: -.5rem;
+    right: -.5rem;
+    opacity: 0;
+    width:calc(100% + 1rem);
+    height:100%;
+  }
+  
+  .ba-slider-line{
+    position:absolute;
+    height:100%;
+    border:1px solid black;
+    left:calc(50% - 1px);
+  }
+  .ba-slider-button {
+    position:absolute;
+    width: 3rem;
+    height: 3rem;
+    left:-1.5rem;
+    top: calc(50% - 1.5rem);
+    background:#000;
+    color:#fff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:100%;
+  }
+  
+  .grid-cols-3{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, max(100px, 33.33%)  )
+  }
+  
+  .grid-cols-3 img{
+    max-width:100%;
+  }
+
+  .before-after{
+    position: relative;
+    padding-bottom: 100%;
+  }
+
+  .before-after img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: all 0.2s;
+  }
+
+  .before-after:hover img{
+    opacity: 0;
+  }
 
 /* Header and footer styles */
 header{
