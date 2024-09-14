@@ -1,4 +1,4 @@
-$('.hamburger-button').click(function(){
+$('.hamburger-toggle').click(function(){
     $('.mobile-menu').fadeToggle(100);
     $(this).toggleClass('active')
 });

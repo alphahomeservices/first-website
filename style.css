@@ -44,7 +44,7 @@ a:hover{
 .padded-05 {  padding: 0.5rem;  }
 .padded-3 {  padding: 3%;  }
 .padded-1 {  padding: 1rem;  }
-.padded-2 {  padding: 2rem;  }
+.padded-2 {  padding: 2%;  }
 .p-t-10{padding-top: 10%;}
 .p-2 {  padding: 2rem;  }
 .m-l-505{margin-left: 5.5rem;}
@@ -385,6 +385,10 @@ footer a{
 .tablet-show {
     display: none; 
 }
+
+.bold{
+  font-weight: bold;
+}
                         
                       
 #video{
@@ -676,6 +680,9 @@ margin-bottom: 0;
     margin-top: 1rem;
   }
   
+.italic{
+  font-style: italic;
+}
 .asterix-pricing{
     font-size: 1rem;
     font-style: italic;
