@@ -119,6 +119,10 @@ hr { /* this is a line element */
     margin-bottom: 1rem;
 }
 
+.square{
+  padding-bottom: 100%;
+}
+
 
 /* Unique Typography Styles */
 

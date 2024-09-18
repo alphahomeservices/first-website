@@ -1,7 +1,7 @@
 --- 
 layout: default 
 before-and-after:
- - before-image: /images/placeholder-photo-2.jpg
+ - before-image: /images/door-after.jpg
    after-image: /images/placeholder-photo-1.jpg
  - before-image: /images/placeholder-photo-2.jpg
    after-image: /images/placeholder-photo-1.jpg 
@@ -131,7 +131,7 @@ reviews:
       <!-- <p> <strong> Facebook: </strong> <a href="#">fb example </a> </p> -->
     </div>
     <div class="col-6_sm-12-middle padded bg-teal">
-        <form name="contact" action="https://formspree.io/f/xbjvdvzg"
+        <form name="contact" action="https://formspree.io/f/xzzplbzw"
         method="POST" class="grid-center" data-netlify="true">
             <div class="floating-input col-6 white-underline">
             <input class="inp" type="text" name="_name" id="_name" placeholder="Your name" />
@@ -191,12 +191,23 @@ reviews:
 
      
               
-<section class="padded center" id="past-performance">
-  <h2> Past Project </h2>
-  <p class="center"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores illum sunt tenetur dicta sit quae voluptate consequatur delectus accusamus, natus odit illo molestias eius molestiae perferendis excepturi aut numquam iusto?</p>
+<section class="padded grid-spaceBetween center" id="past-performance">
+  <h2 class="col-12"> Past Projects </h2>
+  <!-- <p class="center"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores illum sunt tenetur dicta sit quae voluptate consequatur delectus accusamus, natus odit illo molestias eius molestiae perferendis excepturi aut numquam iusto?</p> -->
 
+  <div class="col-4">
+    <img src="/images/door-after.jpg">
+  </div>
 
-  <div class="grid-spaceBetween padded-1">
+  <div class="col-4">
+    <img src="/images/porch.jpg">
+  </div>
+
+  <div class="col-4">
+    <img src="/images/stairs-after.jpg">
+  </div>
+
+  <!-- <div class="grid-spaceBetween padded-1">
     {%for image in page.before-and-after%}
     <div class="col-4_sm-12 {%if forloop.index > 2%} mob-hide {%endif%}">
         <div class="padded-1 before-after" style="background-image: url('{{image.before-image}}')">
@@ -205,7 +216,7 @@ reviews:
     </div>
     {%endfor%}
     
-    </div>
+    </div> -->
 </section>
 
 <hr class="col-12" id="blueline"> 
